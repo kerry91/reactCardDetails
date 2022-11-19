@@ -76,7 +76,7 @@ return(
                   name="cardNumber"
                   defaultValue={cardData.Data ? cardData.Data.cardNumber : "0000 0000 0000 0000"}
                   onChange={handleChange}
-                  pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"
+                  pattern="[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}"
                   required
                 />
               </div>
