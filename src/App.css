@@ -64,10 +64,10 @@ form-control:focus{
   
   #cNumber{
     position:absolute;
-    bottom: 7%;
+    bottom: 20%;
     left:5%;
     color: white;
-    font-size: 30px;
+    font-size: 34px;
   }
   
   #cName{
@@ -125,7 +125,7 @@ form-control:focus{
       }
       #card-back-container{
         top: 40px;
-        left: 5rem;
+        left: 3rem;
         width: 20rem;
         height: 160px;
         border-radius: 0.5em;
@@ -136,6 +136,9 @@ form-control:focus{
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 20%;
+    }
+    #cNumber{
+      font-size: 28px;
     }
   }
 
@@ -170,6 +173,9 @@ form-control:focus{
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 10%;
+    }
+    #cNumber{
+      font-size: 34px;
     }
   }
 
