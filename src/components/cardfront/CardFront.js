@@ -1,10 +1,11 @@
 import { connect } from "react-redux";
+import cardLogo from './images/cardLogo.svg';
 
 const CardFront = (props) => {
     return (
       <>
         <div id="card-front-container">
-          <img class="cardLogo" src="../images/card-logo.svg" alt="Card Logo" />
+          <img class="cardLogo" src={cardLogo} alt="Card Logo" />
           <p id="cName">{props.cardData.Data
                       ? props.cardData.Data.cardholderName
                       : "Jane Appleseed"}</p>
