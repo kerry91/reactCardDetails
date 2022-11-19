@@ -161,6 +161,9 @@ form-control:focus{
     #cNumber{
       font-size: 28px;
     }
+    #cYY{
+      right:6%;
+    }
   }
 
     @media screen and (min-width: 667px) and (max-width: 915px) {
