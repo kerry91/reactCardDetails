@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+.left-col {
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-wrapper{
+    display: flex;
+    margin-left: 30%;
+    margin-top: 25%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.form-control{
+  border: 1.5px solid grey;
+}
+
+.input{
+    margin-bottom: 25px;
+}
+
+.invalid-feedback{
+  text-align: right;
+  font-style: italic;
+  font-size: 10px;
+  margin-top:5px;
+}
+
+form-control:focus{
+  border: 1.5px solid black;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  background-image: url("images/icon-error.svg");
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#card-front-container{
+    position: absolute;
+    top: 20%;
+    width: 447px;
+    height: 245px;
+    background-image: url("images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
   }
-  to {
-    transform: rotate(360deg);
+
+  #card-back-container{
+    position: absolute;
+    top: 50%;
+    width: 447px;
+    height: 245px;
+    background-image: url("images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
   }
-}
+
+  .cardLogo{
+    position:absolute;
+    top: 5%;
+    left:5%;
+  }
+  
+  #cNumber{
+    position:absolute;
+    bottom: 7%;
+    left:5%;
+    color: white;
+    font-size: 30px;
+  }
+  
+  #cName{
+    position:absolute;
+    bottom: 0%;
+    left:5%;
+    color: white;
+  }
+  
+  #cMM{
+    position:absolute;
+    bottom: 0%;
+    right:15%;
+    color: white;
+  }
+  
+  #cYY{
+    position:absolute;
+    bottom: 0%;
+    right:8%;
+    color: white;
+  }
+  
+  #slash{
+    position:absolute;
+    bottom: 0%;
+    right:13%;
+    color: white;
+  }
+  
+  #cCvc{
+    position:absolute;
+    top: 45%;
+    right:12%;
+    color: white;
+  }
+
+  @media screen and (max-width: 576px) {
+    .left-col {
+        background-image: url(images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 28vh;
+        margin-bottom: 20px;
+
+    }
+    #card-front-container{
+        top: 140px;
+        left: 1rem;
+        width: 20rem;
+        height: 160px;
+        border-radius: 0.5em;
+        z-index: 3;
+      }
+      #card-back-container{
+        top: 40px;
+        left: 5rem;
+        width: 20rem;
+        height: 160px;
+        border-radius: 0.5em;
+        z-index: 2;
+      }
+      .form-wrapper{
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20%;
+    }
+  }
+
+    @media screen and (min-width: 667px) and (max-width: 915px) {
+    .left-col {
+        background-image: url(images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 58vh;
+        margin-bottom: 20px;
+
+    }
+    #card-front-container{
+        top: 140px;
+        left: 210px;
+        width: 20rem;
+        height: 160px;
+        border-radius: 0.5em;
+        z-index: 3;
+      }
+      #card-back-container{
+        top: 40px;
+        left: 280px;
+        width: 20rem;
+        height: 160px;
+        border-radius: 0.5em;
+        z-index: 2;
+      }
+      .form-wrapper{
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+  }
+
+ 
