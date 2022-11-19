@@ -76,6 +76,7 @@ const ResumeForm = (props) => {
   return (
       <>
        {getStepContent(activeStep)}
+       {handleBack} {handleStep} {handleComplete} {handleReset} {handleEdit}
       </>
   );
 };
