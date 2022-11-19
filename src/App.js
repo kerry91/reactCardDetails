@@ -1,10 +1,19 @@
+import {useState} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import CardFront from './components/cardfront/CardFront';
 import CardBack from './components/cardback/CardBack';
+import Complete from './components/complete/Complete';
 import Form from "./Forms/index.js";
 
 function App() {
+
+  const handleVisibility = event => {
+
+    setIsVisible(current => !current);
+  };
+  const [isVisible, setIsVisible] = useState(true);
+  
   return (
     <>
   <div class="row ">
@@ -17,7 +26,15 @@ function App() {
       </div>
     </div>
     <div class="right-col col-xl-8 col-lg-8 col-sm-12 offset-xl-0">
-      <Form/>
+      <div className='form-panel' style={{visibility: isVisible ? 'visible' : 'hidden'}}>
+      <Form />
+      
+      </div>
+      <div className='complete-panel' style={{visibility: isVisible ? 'hidden' : 'visible'}}>
+      <Complete/>
+      </div>
+      {handleVisibility}
+      {/*<button onClick={handleVisibility}>Toggle visibility</button>*/}
     </div>
   </div>
     </>

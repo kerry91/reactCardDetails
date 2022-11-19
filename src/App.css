@@ -5,10 +5,25 @@
     height: 100vh;
 }
 
+.form-panel{
+  visibility: visible;
+}
+
+.complete-panel{
+  visibility: hidden;
+}
+
 .form-wrapper{
-    display: flex;
+    display: absolute;
     margin-left: 30%;
     margin-top: 25%;
+}
+
+.complete-wrapper{
+  display: absolute;
+  margin-right:-350%;
+  margin-top: -25%;
+  z-index: 10;
 }
 
 .form-control{
@@ -137,6 +152,12 @@ form-control:focus{
         margin-right: 5%;
         margin-top: 30%;
     }
+    .complete-wrapper{
+      display: absolute;
+      margin-right:0%;
+      margin-top: -100%;
+      z-index: 10;
+    }
     #cNumber{
       font-size: 28px;
     }
@@ -173,6 +194,12 @@ form-control:focus{
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 10%;
+    }
+    .complete-wrapper{
+      display: absolute;
+      margin-right:-200%;
+      margin-top: -35%;
+      z-index: 10;
     }
     #cNumber{
       font-size: 28px;
